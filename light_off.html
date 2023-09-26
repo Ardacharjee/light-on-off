@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #light{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+<script>
+function func(){
+document.getElementById("light").src="pic_bulbon.jpg";
+}
+function func1(){
+document.getElementById("light").src="pic_bulboff.jpg";
+window.alert("Light off");
+}
+</script>
+</head>
+<body>
+    <div class="container">
+        <img id="light" src="pic_bulbon.jpg" alt="bulb"><br>
+            <button type="button" onclick=func()>ON</button>
+            <button type="button" onclick=func1()>OFF</button>
+    </div>
+</body>
+</html>
